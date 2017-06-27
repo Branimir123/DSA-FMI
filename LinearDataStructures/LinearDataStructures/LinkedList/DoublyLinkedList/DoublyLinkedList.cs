@@ -2,16 +2,16 @@
 {
     public class DoublyLinkedList<T>
     {
-        public int Size { get; private set; }
-        public DoublyLinkedNode<T> First { get; set; }
-        public DoublyLinkedNode<T> Last { get; set; }
-
         public DoublyLinkedList()
         {
             this.First = null;
             this.Last = null;
             this.Size = 0;
         }
+
+        public int Size { get; private set; }
+        public DoublyLinkedNode<T> First { get; set; }
+        public DoublyLinkedNode<T> Last { get; set; }
 
         //Adds an element to the front of the list
         public void AddToFront(T value)

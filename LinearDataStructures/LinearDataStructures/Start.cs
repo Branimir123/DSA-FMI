@@ -1,5 +1,6 @@
 ﻿using LinearDataStructures.LinkedList.DoublyLinkedList;
 using LinearDataStructures.List;
+using LinearDataStructures.LinkedList.SinglyLinkedList;
 using System;
 using Utils.Time;
 
@@ -27,6 +28,17 @@ namespace LinearDataStructures
                 for (int i = 0; i < 1000000; i++)
                 {
                     doublyLinkedList.AddToBack(i);
+                    doublyLinkedList.AddToFront(i);
+                }
+            }));
+
+            var singlyLinkedList = new SinglyLinkedList<int>();
+            Console.WriteLine(Measure.Action(() =>
+            {
+                for (int i = 0; i < 1000000; i++)
+                {
+                    singlyLinkedList.AddToBack(i);
+                    singlyLinkedList.AddToFront(i);
                 }
             }));
         }
