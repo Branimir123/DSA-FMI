@@ -22,8 +22,7 @@ namespace LinearDataStructures.List
             {
                 throw new ArgumentException("Cant create list");
             }
-
-            this.size = size;
+            this.size = 0;
             Reserve(size);
         }
         //Returns last element

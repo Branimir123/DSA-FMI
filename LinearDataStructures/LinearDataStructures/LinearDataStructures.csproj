@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LinkedList\DoublyLinkedList\DoublyLinkedList.cs" />
+    <Compile Include="LinkedList\DoublyLinkedList\DoublyLinkedNode.cs" />
     <Compile Include="List\List.cs" />
     <Compile Include="Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -54,6 +56,9 @@
       <Project>{7437b758-c4c0-4d91-886d-91a66930335e}</Project>
       <Name>Utils</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LinkedList\SinglyLinkedList\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
